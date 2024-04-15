@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/your-project-id.css" />
+
+    <title>Home- Game of Thrones</title>
+    <link rel="icon" type="x-icon" href="DRAGON.ico" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fjalla+One&family=Khand:wght@300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Sedan:ital@0;1&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Khand:wght@300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fjalla+One&family=Khand:wght@300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Anton&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fjalla+One&family=Khand:wght@300&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quicksand:wght@300..700&family=Sedan:ital@0;1&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url("jogn.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+      }
+
+      .movie-title h2 {
+        position: absolute;
+        background: linear-gradient(
+          to right,
+          #000000,
+          #494848,
+          rgb(84, 82, 82),
+          #383737,
+          #494848
+        );
+        text-align: center;
+        animation: slide 10s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 20%; /* Adjust this value as needed */
+        font-size: 2em;
+        font-family: "Trajan Pro", serif;
+        right: 10px;
+        top: -130px;
+        cursor: pointer;
+        letter-spacing: 3px;
+      }
+      @font-face {
+        font-family: "Trajan Pro";
+        src: url("trajanpro.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @keyframes slide {
+        from {
+          background-position: 0 0;
+        }
+        to {
+          background-position: 100% 0;
+        }
+      }
+
+      h3 {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 3px;
+        font-size: 35px;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        right: 275px;
+        top: 83%;
+        opacity: 0.8;
+      }
+      .movie-title strong {
+        text-transform: uppercase;
+        position: absolute;
+        color: #880808;
+        right: 90px;
+        top: 220px;
+        font-size: 28px;
+        text-align: center;
+        font-family: "Sedan", serif;
+        font-weight: 800;
+        font-style: normal;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+      .sub-heading {
+        display: flex;
+        flex-direction: row;
+        right: 20px;
+        top: 270px;
+        position: absolute;
+        text-transform: uppercase;
+        margin: 2px;
+        gap: 15px;
+      }
+      .sub-heading p {
+        font-size: 22px;
+        color: ghostwhite;
+      }
+      .subb-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .subb-heading p {
+        font-size: 22px;
+        color: rgb(228, 228, 233);
+      }
+      .collection-text {
+        display: block;
+        margin-top: 102px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="movie-title">
+        <h2>Game of Thrones</h2>
+        <strong>You win or you die</strong>
+        <div class="collection-text">
+          <div class="sub-heading">
+            <p>An Epic New Series</p>
+            <div class="subb-heading">
+              <!-- use this for the flx box-->
+              <p>ONLY ON</p>
+              <h3>HBO</h3>
+            </div>
+            <p>SUNDAY,APRIL 19,11PM</p>
+          </div>
+        </div>
+      </div>
+      <audio id="myAudio" loop>
+        <source src="gott.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        window.addEventListener("click", function () {
+          document.getElementById("myAudio").play();
+        });
+      </script>
+    </div>
+  </body>
+</html>
